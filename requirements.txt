@@ -1,0 +1,10 @@
+gradio
+groq
+torch
+transformers
+peft
+accelerate
+bitsandbytes
+datasets
+trl
+wandb
