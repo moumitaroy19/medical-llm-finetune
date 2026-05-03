@@ -1,8 +1,12 @@
 # 🏥 Medical LLM Fine-tuning using Mistral-7B + QLoRA
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-orange)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow)
 ![W&B](https://img.shields.io/badge/Weights%20%26%20Biases-Tracking-orange)
+
+## 🎯 Live Demo
+👉 [Try it on Hugging Face Spaces](https://huggingface.co/spaces/mou11/medical-llm-finetune)
 
 ## 🔍 Overview
 This project fine-tunes Mistral-7B-Instruct-v0.2 on USMLE-style medical question answering data using QLoRA (Quantized Low-Rank Adaptation). By freezing the base model in 4-bit precision and training only small LoRA adapter layers (0.19% of parameters), a 7 billion parameter LLM is fine-tuned on a single free T4 GPU in under 3 hours.
@@ -49,7 +53,7 @@ Full fine-tuning of a 7B model requires ~112GB of GPU memory — impossible on f
 - Kaggle T4 GPU (free tier)
 
 ## 🚀 How to Run
-1. Open `medical_llm_finetune.ipynb` in Kaggle
+1. Open `medical-llm-finetune.ipynb` in Kaggle
 2. Connect to T4 x2 GPU runtime
 3. Add your WANDB_API_KEY and HF_TOKEN to Kaggle Secrets
 4. Run all cells in order
@@ -59,4 +63,5 @@ Full fine-tuning of a 7B model requires ~112GB of GPU memory — impossible on f
 ✅ Mistral-7B loaded in 4-bit QLoRA  
 ✅ Model fine-tuned on USMLE medical QA  
 ✅ Experiment tracked with Weights & Biases  
-✅ Model adapter pushed to Hugging Face
+✅ Model adapter pushed to Hugging Face  
+✅ Gradio demo deployed on Hugging Face Spaces
